@@ -8,7 +8,7 @@ const greeting = {
   username: "Cannigia Laluw",
   title: "Hi all, I'm Canni 🇮🇩",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of designing and building Web and Mobile applications with JavaScript / Reactjs and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀. I enjoy designing and building Web applications with JavaScript / React.js and other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1nPuOkJmPZiJhR3gRbl7FEXzZopavQ9t8/view?usp=sharing",
@@ -24,7 +24,7 @@ const socialMediaLinks = {
   // gitlab: "https://gitlab.com/",
   // facebook: "https://www.facebook.com/",
   medium: "https://cannigialaluw.medium.com/",
-  // instagram: 'https://www.instagram.com/davidrakosi/',
+  // instagram: 'https://www.instagram.com/kanigeeuh/',
   display: true // Set true to display this section, defaults to false
 };
 
@@ -121,7 +121,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend / Design", //Insert stack or technology you have experience in
@@ -296,7 +296,7 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "I wrote about what I learned so far. I hope it can inspire others to learn as well.",
+    "My thoughts on some of the things I learned. I hope it can inspire others to learn as well.",
 
   blogs: [
     {
