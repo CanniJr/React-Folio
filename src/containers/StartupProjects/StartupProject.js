@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import "./StartupProjects.css";
-import {bigProjects} from "../../portfolio";
+import {bigProjects, currentProject} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -83,6 +83,12 @@ export default function StartupProject() {
               );
             })}
           </div>
+          <p>What I'm currently working on: </p>
+            <span 
+            style={{fontWeight:'bold', cursor:'pointer'}}
+            onClick={() => openProjectInNewWindow(currentProject.projectLink)}
+            >PickMealUp
+            </span>
         </div>
       </div>
     </Fade>

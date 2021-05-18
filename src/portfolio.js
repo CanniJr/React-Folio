@@ -1,7 +1,7 @@
 ﻿import emoji from "react-easy-emoji";
 
 const illustration = {
-  animated: true // set to false to use static SVG
+  animated: false // set to false to use static SVG
 };
 
 const greeting = {
@@ -32,14 +32,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Process-driven Full Stack Developer who loves to build web application that can help make a positive impact.",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase"
+      "⚡ Integration of third party services such as Firebase."
     )
   ],
 
@@ -71,10 +71,10 @@ https://fontawesome.com/icons?d=gallery */
     //   skillName: "nodejs",
     //   fontAwesomeClassname: "fab fa-node"
     // },
-    // {
-    //   skillName: "swift",
-    //   fontAwesomeClassname: "fab fa-swift"
-    // },
+    {
+      skillName: "React Native",
+      fontAwesomeClassname: "fab fa-react"
+    },
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
@@ -193,7 +193,7 @@ const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "CanniJr", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: true, // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -208,10 +208,13 @@ const bigProjects = {
       projectDesc: "E-commerce website with Firebase login functionality and to store database, also Stripe to process user payments.",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Deployed site",
           url: "https://amaclone01.web.app/"
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/CanniJr/amaclone"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
@@ -220,14 +223,38 @@ const bigProjects = {
       projectDesc: "React app to track coronavirus cases, recovery and deaths using Leaflet.js for map functionality.",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Deployed site",
+          url: "https://trackit-19.web.app/"
+        },
+        {
+          name: "Github",
           url: "https://github.com/CanniJr/trackit-19"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/tailwind-cinema.png"),
+      projectName: "Tailwind Cinema",
+      projectDesc: "Movie selector interface using Next.js and tailwind cinema, inspired by Hulu.",
+      footerLink: [
+        {
+          name: "Deployed site",
+          url: "https://tailwind-cinema.vercel.app"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/CanniJr/tailwind-cinema"
         }
       ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
+const currentProject = {
+  projectName: "PickMealUp",
+  projectLink: "https://github.com/CanniJr/PickMealUp"
+}
 
 // Achievement Section
 // Include certificates, talks etc
@@ -379,6 +406,7 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  currentProject,
   achievementSection,
   blogSection,
   talkSection,
